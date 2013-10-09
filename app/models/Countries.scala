@@ -1,4 +1,4 @@
-package controllers.models
+package models
 
 object Countries {
   

@@ -1,15 +1,23 @@
-@(title: String)
-
-<!DOCTYPE html>
-
-<html>
-    <head>
-        <title>@title</title>
-        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
-        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
-        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
-    </head>
-    <body>
-        hi, @title
-    </body>
-</html>
+@main(Html("Form samples")) {
+    
+    <h2>Sign up form</h2>
+    
+    <p>
+        Demonstrate a classical sign up form.
+    </p>
+    
+    <p>
+        <a class="btn" href="@routes.SignUp.form">View sample »</a>
+    </p>
+    
+    <h2>Contact form</h2>
+    
+    <p>
+        Demonstrate a contact manager that allows the addition of complex contact information.
+    </p>
+    
+    <p>
+        <a class="btn" href="@routes.Contacts.form">View sample »</a>
+    </p>
+    
+}

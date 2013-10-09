@@ -1,4 +1,4 @@
-package controllers.models
+package models
 
 case class Contact(
   firstname: String,
